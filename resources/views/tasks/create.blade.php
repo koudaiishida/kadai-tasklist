@@ -4,6 +4,7 @@
 
 <h1>Create A New Task</h1>
 
+
     {!! Form::model($task, ['route' => 'tasks.store']) !!}
 
         {!! Form::label('content', 'TASK:') !!}
