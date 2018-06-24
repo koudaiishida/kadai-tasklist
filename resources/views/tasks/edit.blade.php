@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>id= {{ $task->id }} Rewrite Tasks</h1>
+<h1>id= {{ $task->id }} Rewrite My Task</h1>
 
 <div class="row">
     <div class="col-xs-12 
