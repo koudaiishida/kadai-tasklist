@@ -17,16 +17,17 @@ class CreateTasksTable extends Migration
             $table->increments('id');
             $table->string('content');
             $table->timestamps();
+$table->foreign('user_id')->references('id')->on('users');
         });
     }
+    
+    
 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
     public function down()
     {
         Schema::dropIfExists('tasks');
     }
+    
+    
+    
 }
